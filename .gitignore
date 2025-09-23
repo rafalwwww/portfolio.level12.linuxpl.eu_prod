@@ -1,13 +1,14 @@
 # WordPress #
 wp-config.php
 wp-content/upgrade/
-wp-content/uploads/
 wp-content/cache/
 wp-content/wflogs/
 
+wp-content/uploads/backup/
+wp-content/uploads/wpcode/
+wp-content/uploads/smush/
+
 # Security files #
-.htaccess
-.user.ini
 
 # Backup files #
 *.backup
@@ -24,3 +25,6 @@ Thumbs.db
 # Temporary files #
 tmp/
 temp/
+
+# Node.js files (for your wenku theme) #
+wp-content/themes/wenku/node_modules/
