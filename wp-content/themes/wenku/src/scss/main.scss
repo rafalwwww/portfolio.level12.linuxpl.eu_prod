@@ -28,22 +28,15 @@ $transition1: all 2s ease;
 
 @font-face {
     font-family: 'Lato';
-    // src: url('webfont.eot'); /* IE9 Compat Modes */
-    src: //url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        //url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-        //url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-        url('fonts/Lato-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
-        //url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+    src: url('fonts/Lato-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     src: local('Lato Regular'), local('Lato-Regular'), url(fonts/Lato-Regular.ttf) format('truetype');
-    //url(../fonts/Lato-Regular.ttf)
 }
 
-//Then use it to style elements like this:
 body {
     font-family: 'Lato', Arial, Verdana, Tahoma, sans-serif;
 }
@@ -99,8 +92,8 @@ body {
             display: none;
         }
     i.bi {
-        font-size: 1.2em; // dopasuj do tekstu
-        margin-right: 0.5em; // odstęp od tekstu
+        font-size: 1.2em;
+        margin-right: 0.5em;
         transition: color 0.3s;
         line-height: 1;
         display: inline-block;
@@ -120,7 +113,6 @@ body {
         cursor: pointer;
         justify-content: center;
         height: 50px;
-        // float: left;
         line-height: 50px;
         @include media-breakpoint-down(xss) { //440px
             display: inline-block;
@@ -185,10 +177,7 @@ body {
     }
     .img-flex-container {
         @include media-breakpoint-up(xss) { //440px
-            /* margin: 0 auto; */
-            /* width: fit-content; */
             text-align: initial;
-            /* flex-wrap: wrap; */
             display: flex;
         }
     }
@@ -226,7 +215,6 @@ body {
         background-color: #0d6efd;
     }
 }
-
 
 
 
@@ -434,23 +422,6 @@ ul.alm-listing.alm-ajax {
                 margin-bottom: 0px;
                 padding-bottom: 5px;
                 font-size: 1.1rem;
-                // img {
-                //     width: 20px;
-                //     padding: 0px 0px 0px 0px;
-                //     margin: -5px 7px 0 0;
-                //     @include media-breakpoint-up(lg) {
-                //         width: 32px;
-                //     }
-                //     //4096
-                //     @include media-breakpoint-up(fourK) {
-                //         width: 38px;
-                //     }
-                //     //8192
-                //     @include media-breakpoint-up(eightK) {
-                //         width: 54px;
-                //         margin: -15px 7px 0 0;
-                //     }
-                // }                
                 @include media-breakpoint-up(xss) { //440px
                     font-size: 1.3rem;
                 }
@@ -609,26 +580,9 @@ ul.alm-listing.alm-ajax {
                 height: 25px;
                 top: 3px;
                 @include media-breakpoint-up(lg) {
-                    // width: 32px;
                 }
             }
-        // .content {
-        //     &:before {
-        //         background-size: 100% auto;
-        //         background-repeat: no-repeat;
-        //         content: "";                    
-        //         display: block;
-        //         width: 25px;
-        //         position: absolute;
-        //         z-index: 0;
-        //         left: 3px;
-        //         height: 25px;
-        //         top: 3px;
-        //         @include media-breakpoint-up(lg) {
-        //             // width: 32px;
-        //         }
-        //     }        
-        // }
+        
         &.hover, &:hover {
             .content {
                 &:before {
@@ -636,57 +590,6 @@ ul.alm-listing.alm-ajax {
                 }
             }
         }
-
-            // &.wp {
-            //     &:before {
-            //             background-image: url('images/wp-w-icon30.png');
-            //         }
-            //     .content {
-            //         &:before {
-            //             background-image: url('images/wp-w-icon30.png');
-            //         }
-            //     }
-            // }
-            // &.ps {
-            //     &:before {
-            //             background-image: url('images/prestashop-ico.svg');
-            //         }
-            //     .content {
-            //         &:before {
-            //             background-image: url('images/prestashop-ico.svg');
-            //         }
-            //     }
-            // }
-            // &.sat {
-            //     &:before {
-            //             background-image: url('images/satelitka.png');
-            //         }
-            //     .content {
-            //         &:before {
-            //             background-image: url('images/satelitka.png');
-            //         }
-            //     }
-            // }
-            // &.modx {
-            //     &:before {
-            //             background-image: url('images/modx-ico.svg');
-            //         }
-            //     .content {
-            //         &:before {
-            //             background-image: url('images/modx-ico.svg');
-            //         }
-            //     }
-            // }
-            // &.dogo {
-            //     &:before {
-            //             background-image: url('images/dogo-system-ico.webp');
-            //         }
-            //     .content {
-            //         &:before {
-            //             background-image: url('images/dogo-system-ico.webp');
-            //         }
-            //     }
-            // }
 
         &:not(.no-hover-mobile) {
             &.hover {
@@ -873,30 +776,8 @@ div.modal {
 }
 
 
-// .page-load-status {
-//   display: none; /* hidden by default */
-//   padding-top: 20px;
-//   border-top: 1px solid #DDD;
-//   text-align: center;
-//   color: #777;
-// }
-
-
-// .page-load-status {
-//     display:block !important; /*never problem the forced block, because the all children will be display:none, exception that one, what handle the infinite-scroll (so the active status)*/
-// }
-
-
-// .infinite-scroll-request,
-// .infinite-scroll-error {
-//     display:none;
-// }
-// .infinite-scroll-last {
-//     display:block; /*Needful the block value because the pages without pagination (but non forced, so on paginated pages will be display:none this and .infinite-scroll-request will get it block!) */
-// }
-
 .loader-ellips {
-  font-size: 20px; /* change size here */
+  font-size: 20px; 
   position: relative;
   width: 4em;
   height: 1em;
@@ -907,7 +788,7 @@ div.modal {
   width: 1em;
   height: 1em;
   border-radius: 0.5em;
-  background: #555; /* change color here */
+  background: #555; 
   position: absolute;
   animation-duration: 0.5s;
   animation-timing-function: ease;
@@ -943,8 +824,6 @@ div.modal {
   animation-direction: reverse;
 }
 
-// #ajax-load-more.ajax-load-more-wrap > .alm-btn-wrap .alm-load-more-btn,
-// #ajax-load-more.ajax-load-more-wrap > .alm-btn-wrap .alm-load-more-btn.done,
 .ajax-load-more-wrap {
     .custom-alm-loader {
         display: block;
@@ -1003,7 +882,6 @@ div.modal {
             height: 65px;
             border-radius: 100%;
             font-size: 0;            
-            //&:after, 
             &:before {
                 content: "\f119";
                 display: inline-block;
@@ -1059,26 +937,3 @@ div.modal {
         margin: 0px 5px;
     }
 }
-
-// .custom-alm-loader .custom-alm-load-more-btn {
-//     appearance: none;
-//     background: #ed7070;
-//     border: none;
-//     border-radius: 4px;
-//     box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
-//     color: #fff;
-//     cursor: pointer;
-//     display: inline-block;
-//     font-size: 15px;
-//     font-weight: 500;
-//     height: 43px;
-//     line-height: 1;
-//     margin: 0;
-//     padding: 0 20px;
-//     position: relative;
-//     text-align: center;
-//     text-decoration: none;
-//     transition: all .3s ease;
-//     user-select: none;
-//     width: auto;
-// }

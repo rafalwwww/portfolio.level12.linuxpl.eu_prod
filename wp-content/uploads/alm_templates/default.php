@@ -59,14 +59,11 @@
 					<i class="bi bi-file-earmark-code"></i>
 				</a>
 			<?php endif; ?>
-
-			<!-- <i class="bi bi-arrow-down-circle"></i> -->
 		</div>
 		<div class="onclick"></div>
 	</article>    
 </div>
 <?php if( get_field('modal') ): ?>
-	<!-- aria-hidden="true" -->
 <div class="modal fade" id="Modal<?php the_ID(); ?>" tabindex="-1" aria-labelledby="exampleModalLabel">
 	<div class="modal-dialog">
 	    <div class="modal-content">
