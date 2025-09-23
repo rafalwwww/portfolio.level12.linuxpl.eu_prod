@@ -1,0 +1,26 @@
+# WordPress #
+wp-config.php
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/cache/
+wp-content/wflogs/
+
+# Security files #
+.htaccess
+.user.ini
+
+# Backup files #
+*.backup
+*.bak
+
+# IDE files #
+.vscode/
+.idea/
+
+# OS generated files #
+Thumbs.db
+.DS_Store
+
+# Temporary files #
+tmp/
+temp/
