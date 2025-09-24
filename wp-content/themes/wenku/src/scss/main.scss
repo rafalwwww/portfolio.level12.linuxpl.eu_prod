@@ -540,7 +540,7 @@ ul.alm-listing.alm-ajax {
                 right: 0px;
                 left: 0px;
                 padding: 0px 0 0 0;
-                top: -3px;
+                top: -2px;                
                 width: 27px;
                 height: 27px;
             }
@@ -667,10 +667,9 @@ ul.alm-listing.alm-ajax {
                     width: 28px;
                     margin: 0 0 0 3px;
                     &.code {
-                        // margin: -2px 0 0 3px;
                         top: -2px;
                         .bi:before {
-                            font-size: 27px;
+                            font-size: 26px;
                         }
                     }
                 }

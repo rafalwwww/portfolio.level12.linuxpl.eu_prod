@@ -52,9 +52,9 @@
         .cboxSlideshow_off #cboxSlideshow{background-position:-100px 0px; right:44px;}
         .cboxSlideshow_off #cboxSlideshow:hover{background-position:-75px -25px;}
 
-/*!***************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/scss/main.scss ***!
-  \***************************************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/scss/main.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
 @charset "UTF-8";
 /* $grid-breakpoints: (
   xs: 0,
@@ -12328,7 +12328,7 @@ progress {
 
 @font-face {
   font-family: "Lato";
-  src: url("fonts/Lato-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+  src: url("fonts/Lato-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Lato";
@@ -12832,7 +12832,7 @@ ul.alm-listing.alm-ajax {
   right: 0px;
   left: 0px;
   padding: 0px 0 0 0;
-  top: -3px;
+  top: -2px;
   width: 27px;
   height: 27px;
 }
@@ -12919,6 +12919,12 @@ ul.alm-listing.alm-ajax {
   display: inline-block;
   width: 28px;
   margin: 0 0 0 3px;
+}
+.grid-item .content .icons-action .blink.code {
+  top: -2px;
+}
+.grid-item .content .icons-action .blink.code .bi:before {
+  font-size: 26px;
 }
 .grid-item .content .icons-action .blink + .bi.bi-info-circle {
   margin: 0 0 0 5px;
@@ -13024,7 +13030,7 @@ div.modal div.modal-dialog {
 }
 
 .loader-ellips {
-  font-size: 20px; /* change size here */
+  font-size: 20px;
   position: relative;
   width: 4em;
   height: 1em;
@@ -13036,7 +13042,7 @@ div.modal div.modal-dialog {
   width: 1em;
   height: 1em;
   border-radius: 0.5em;
-  background: #555; /* change color here */
+  background: #555;
   position: absolute;
   animation-duration: 0.5s;
   animation-timing-function: ease;

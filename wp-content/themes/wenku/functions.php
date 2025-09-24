@@ -12,25 +12,21 @@ function wenku_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'wenku_enqueue_styles' );
 
 function wenku_enqueue_script() {
-	// if ( is_home() ) {
-		wp_enqueue_script (		
-			'main',
-			esc_url( get_stylesheet_directory_uri() . '/assets/js/main.js' ),
-			[],
-			'',
-			[ 'strategy' => 'defer' ],
-		);
-	// }
+	wp_enqueue_script (		
+		'main',
+		esc_url( get_stylesheet_directory_uri() . '/assets/js/main.js' ),
+		[],
+		'',
+		[ 'strategy' => 'defer' ],
+	);
 }
 add_action( 'wp_enqueue_scripts', 'wenku_enqueue_script' );
 
 // Prevent WP from adding <p> tags on all post types
 function disable_wp_auto_p( $content ) {
-	//if ( is_singular( 'page' ) ) {
-  		remove_filter( 'the_content', 'wpautop' );
-  		remove_filter( 'the_excerpt', 'wpautop' );
-  		return $content;
-  	//}	
+  	remove_filter( 'the_content', 'wpautop' );
+  	remove_filter( 'the_excerpt', 'wpautop' );
+  	return $content;
 }
 add_filter( 'the_content', 'disable_wp_auto_p', 0 );
 
