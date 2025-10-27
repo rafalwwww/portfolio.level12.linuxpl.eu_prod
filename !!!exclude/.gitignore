@@ -1,0 +1,239 @@
+# WordPress #
+wp-config.php
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/cache/
+wp-content/wflogs/
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+sitemap.xml
+sitemap.xml.gz
+
+# Security files #
+.htaccess
+.user.ini
+
+# Backup files #
+*.backup
+*.bak
+*.sql
+
+# IDE files #
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files #
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files #
+tmp/
+temp/
+
+# Node.js files (for your wenku theme) #
+wp-content/themes/wenku/node_modules/
+wp-content/themes/wenku/dist/
+
+# Log files #
+*.log
+
+# WordPress core files (optional - only if you're not tracking core) #
+wp-admin/
+wp-includes/
+*.php
+index.php
+license.txt
+readme.html
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+
+# Exceptions for your custom theme (to ensure it's tracked) #
+!wp-content/themes/wenku/
+!wp-content/themes/wenku/**
+!wp-content/themes/twentytwentyfour/
+!wp-content/themes/twentytwentyfour/**
+
+# Exceptions for specific files in wp-content root #
+!wp-content/index.php
+
+# Exceptions for plugins you might have customized #
+!wp-content/plugins/
+!wp-content/plugins/**
+
+
+
+
+
+
+
+
+
+
+
+
+# WordPress #
+wp-config.php
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/cache/
+wp-content/wflogs/
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+sitemap.xml
+sitemap.xml.gz
+
+# Security files #
+.htaccess
+.user.ini
+
+# Backup files #
+*.backup
+*.bak
+*.sql
+
+# IDE files #
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files #
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files #
+tmp/
+temp/
+
+# Node.js files (for your wenku theme) #
+wp-content/themes/wenku/node_modules/
+wp-content/themes/wenku/dist/
+
+# Log files #
+*.log
+
+# WordPress core files (optional - only if you're not tracking core) #
+wp-admin/
+wp-includes/
+*.php
+index.php
+license.txt
+readme.html
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+
+# Exceptions for your custom theme (to ensure it's tracked) #
+!wp-content/themes/wenku/
+!wp-content/themes/wenku/**
+!wp-content/themes/twentytwentyfour/
+!wp-content/themes/twentytwentyfour/**
+
+# Exceptions for specific files in wp-content root #
+!wp-content/index.php
+
+# Exceptions for plugins you might have customized #
+!wp-content/plugins/
+!wp-content/plugins/**
+
+# WordPress #
+wp-config.php
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/cache/
+wp-content/wflogs/
+
+# Security files #
+.htaccess
+.user.ini
+
+# Backup files #
+*.backup
+*.bak
+
+# IDE files #
+.vscode/
+.idea/
+
+# OS generated files #
+Thumbs.db
+.DS_Store
+
+# Temporary files #
+tmp/
+temp/
+
+# WordPress #
+wp-config.php
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/cache/
+wp-content/wflogs/
+
+# Security files #
+.user.ini
+
+# Backup files #
+*.backup
+*.bak
+
+# IDE files #
+.vscode/
+.idea/
+
+# OS generated files #
+Thumbs.db
+.DS_Store
+
+# Temporary files #
+tmp/
+temp/
+
+# Log files #
+*.log
+
+# WordPress core files - these should be installed via deployment process
+wp-admin/
+wp-includes/
+*.php
+
+# But exclude our custom theme - we want to showcase this work
+!wp-content/themes/wenku/
+!wp-content/themes/wenku/**
